@@ -1,0 +1,42 @@
+.expired{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: orangered;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    // flex-direction: column;
+
+    .rs{
+        display: flex;
+        padding: 10px;
+        font-size: 12px;
+        background-color: orangered;
+        border: none;
+        gap: 7.5px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .time{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2px;
+
+        span{
+            color: white;
+            font-weight: bold;
+        }
+        
+        
+    }
+}

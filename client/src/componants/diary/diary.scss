@@ -1,0 +1,173 @@
+.diary{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    .notes{
+        height: 300px;
+        object-fit: cover;
+        border: none;
+        border-radius: 5px;
+        filter: blur(8px);
+        -webkit-filter: blur(2.5px);
+        position: relative;
+    }
+    .abouts{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        color: black;
+        justify-content: center;
+        // top:calc( 0% - 100px);
+        top: -150px;
+        // background-color: red;
+        height: 200px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .tags{
+        display: flex;
+        margin-left: 20px;
+        width: 97%;
+        gap: 50px;
+        .search{
+            display: flex;
+            border: 1px solid gray;
+            width: 100%;
+            overflow: hidden;
+            padding: 5px;
+            padding-left: 20px;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                // color: white;
+                width: 92%;
+                border: none;
+                outline: none;
+                padding: 5px;
+                background: none;
+            }
+        }
+        .create{
+            width: 200px;
+            background-color: orangered;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+        
+    }
+
+    .inputdata{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // width: 97%;
+        padding: 20px;
+        // margin-left: 30px;
+        // background-color: orangered;
+        border-radius: 20px;
+        box-shadow:  -11px 11px 22px #dadada,
+                11px -11px 22px #dadada;
+
+        .title{
+            display: flex;
+            justify-content: center;
+        }
+        .r1{
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            // justify-content: space-around;
+            h1{
+                color: orangered;
+                font-size: 44px;
+            }
+
+            .val1{
+                width: 85%;
+                // height: 50px;
+                padding: 20px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                font-size: 16px;
+                outline: none;
+                // margin-left: 10px;
+            }
+        }
+        .desc{
+            width: 91.5%;
+            margin-left: 45px;
+            height: 100px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            outline: none;
+            padding: 10px;
+            resize: none;
+            font-size: 16px;
+        }
+        .submit{
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+
+            button{
+                width: 200px;
+                background-color: rgb(79, 222, 232);
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-weight: bold;
+                padding: 15px 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .data{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin-left: 20px;
+        gap: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow:  -11px 11px 22px #efeded,
+        11px -11px 22px #efeded;
+        overflow: hidden;
+        .link{
+                text-decoration: none;
+                color: inherit;
+            }
+        &:hover{
+            transform: translate3D(0,-1px,0) scale(1.03);
+        }
+
+        .d{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            // background-color: #86ABCF;
+
+            h1{
+                // color:  #F39F5A;
+                color: orangered;
+            }
+            p{
+                color: #1B3358;
+            }
+        }
+    }
+}

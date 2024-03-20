@@ -1,0 +1,162 @@
+.notess{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    .stickynotess{
+        height: 300px;
+        object-fit: cover;
+        border: none;
+        border-radius: 5px;
+        filter: blur(8px);
+        -webkit-filter: blur(1.5px);
+        position: relative;
+    }
+    .abouts{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        // top:calc( 0% - 100px);
+        top: -150px;
+        // background-color: red;
+        height: 200px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .inputdata{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // width: 97%;
+        padding: 20px;
+        // margin-left: 30px;
+        // background-color: orangered;
+        border-radius: 20px;
+        box-shadow:  -11px 11px 22px #dadada,
+                11px -11px 22px #dadada;
+
+        .title{
+            display: flex;
+            justify-content: center;
+        }
+        .desc{
+            width: 91.5%;
+            margin-left: 45px;
+            height: 100px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            outline: none;
+            padding: 10px;
+            resize: none;
+            font-size: 16px;
+        }
+        .submit{
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+
+            button{
+                width: 200px;
+                background-color: rgb(79, 222, 232);
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-weight: bold;
+                padding: 15px 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .tagss{
+        display: flex;
+        margin-left: 20px;
+        width: 97%;
+        gap: 50px;
+
+        .searchs{
+            display: flex;
+            border: 1px solid gray;
+            width: 100%;
+            overflow: hidden;
+            padding: 5px;
+            padding-left: 20px;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                // color: white;
+                width: 92%;
+                border: none;
+                outline: none;
+                padding: 5px;
+                background: none;
+            }
+        }
+        .adds{
+            width: 200px;
+            background-color: darkturquoise;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+    }
+    .snote{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        // gap: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow:  -11px 11px 22px #efeded,
+        11px -11px 22px #efeded;
+        overflow: hidden;
+
+        .n{
+            
+            display: flex;
+            padding: 20px;
+            // flex-direction: column;
+            gap: 20px;
+            h3{
+                flex: 1;
+                color:  white;
+                width: 100px;
+                height: 30px;
+                background-color: orangered;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                flex: 9;
+                color: #86ABCF;
+            }
+            .dropdown{
+                width: 30px;
+                height: 30px;
+                border: none;
+                &:hover{
+                    border-radius: 50%;
+                    background-color: lightgray;
+                    // color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

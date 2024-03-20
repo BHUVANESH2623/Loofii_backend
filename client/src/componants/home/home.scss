@@ -1,0 +1,46 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/notes.jpg);
+    background-size: cover;
+    padding: 20px;
+    background: blur(8px);
+    // -webkit-filter: blur(1.5px);;
+    gap: 100px;
+    // width: 100%;
+    
+    .boxes{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 50px;
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+            padding: 50px;
+            width: 30%;
+            background-color: #F39F5A;
+            // background-color: #FFC16A;
+            height: 200px;
+            border: none;
+            border-radius: 50px;
+
+            &:hover{
+                transform: translate3D(0,-1px,0) scale(1.03);
+            }
+
+            h1{
+                .link{
+                    text-decoration: none;
+                    color: inherit;
+                    &:hover{
+                        color: #1B3358;
+                    }
+                }
+            }
+        }
+    }
+}
